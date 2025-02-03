@@ -1,6 +1,8 @@
 'use client'
 
 import {useState} from "react";
+import {useRouter} from "next/navigation";
+
 import PageTitle from "@/app/shared/components/PageTitle";
 import Navbar from "@/app/shared/components/Navbar";
 import PatientInfo from "@/app/view-patient/components/PatientInfo";
@@ -10,6 +12,8 @@ import Button from "@/app/shared/components/Button";
 const ViewPatient = () => {
 
     const [activeTab, setActiveTab] = useState('Patient Information');
+
+    const router = useRouter()
 
     const tabs = [
         {id: 'Patient Information', label: 'Patient Information'},
@@ -25,9 +29,10 @@ const ViewPatient = () => {
                 btnText='Assign Package to Patient'
                 noIcon={true}
                 leftIconLabel={true}
+                onButtonClick={() => router.push('/assign-package')}
             />
 
-            <div className='container mx-auto my-5'>
+            <div className='container mx-auto my-8'>
                 <div className='flex items-start justify-between'>
 
                     {/* Left Section */}
