@@ -7,6 +7,7 @@ interface IProps {
     type: "submit" | "button";
     onButtonClick?: () => void;
     rootClassName?: string;
+    // eslint-disable-next-line
     icon?: any;
     disabled?: boolean;
 }
