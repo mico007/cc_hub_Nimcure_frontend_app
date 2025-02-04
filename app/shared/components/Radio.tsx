@@ -2,7 +2,7 @@
 interface IProps {
     label: string;
     id: string;
-    activeTab: string;
+    activeTab?: string;
 }
 
 const Radio = ({label, id, activeTab}:IProps) => {
@@ -13,11 +13,11 @@ const Radio = ({label, id, activeTab}:IProps) => {
                 <input
                     type="radio"
                     id={id}
-                    defaultChecked={id === activeTab}
-                    className="peer col-start-1 row-start-1 appearance-none shrink-0 w-4 h-4 border-2 border-outlineBlue rounded-full cursor-pointer"
+                    defaultChecked={activeTab === activeTab }
+                    className={`peer col-start-1 row-start-1 appearance-none shrink-0 w-4 h-4 border-2 ${activeTab === id ? 'border-outlineBlue' : 'border-gray-400'} rounded-full cursor-pointer`}
                 />
-                {(id === activeTab) && (
-                    <div className="pointer-events-none col-start-1 row-start-1 w-2 h-2 rounded-full peer-checked:bg-outlineBlue"/>
+                {(activeTab  === id) && (
+                    <div className={`pointer-events-none col-start-1 row-start-1 w-2 h-2 rounded-full ${activeTab === id ? 'peer-checked:bg-outlineBlue' : 'peer-checked:bg-gray-400'} `}/>
                 )}
             </div>
             <label htmlFor={id} className="text-start cursor-pointer">{label}</label>

@@ -1,5 +1,6 @@
-import Image from "next/image";
+/* eslint-disable */
 
+import Image from "next/image";
 
 interface IProps {
     btnText: string;
@@ -7,7 +8,6 @@ interface IProps {
     type: "submit" | "button";
     onButtonClick?: () => void;
     rootClassName?: string;
-    // eslint-disable-next-line
     icon?: any;
     disabled?: boolean;
 }

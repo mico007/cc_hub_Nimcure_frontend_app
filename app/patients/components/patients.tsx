@@ -20,7 +20,7 @@ const Patients = () => {
                         <p className='font-semibold text-gray-700 text-sm'>Hospital ID</p>
                         <Image src={DownArrowIcon} alt='down arrow icon'/>
                     </div>
-                    <div className='border  flex items-center space-x-2 px-3 py-1'>
+                    <div className='border  flex items-center space-x-2 px-3 py-1 w-1/5'>
                         <Image src={SearchIcon} alt='search icon'/>
                         <input type="text" placeholder='Search by patient name, id'
                                className='focus:outline-none bg-transparent placeholder:font-light text-sm'/>

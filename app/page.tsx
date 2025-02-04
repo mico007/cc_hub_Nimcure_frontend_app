@@ -23,19 +23,19 @@ export default function LoginPage() {
                             <input
                                 type='email'
                                 placeholder='Email Address'
-                                className=' border border-borderColor px-3 py-2 text-gray-500 placeholder:text-xs mb-2 focus:outline-none'
+                                className=' border border-borderColor bg-transparent px-3 py-2 text-gray-500 placeholder:text-xs mb-2 focus:outline-none'
                             />
                             <div className='flex items-center justify-between border border-borderColor px-3 py-2 mb-3'>
                                 <input
                                     type='password'
                                     placeholder='Password'
-                                    className='placeholder:text-xs focus:outline-none text-gray-500'
+                                    className='placeholder:text-xs focus:outline-none text-gray-500 bg-transparent'
                                 />
                                 <span className='text-xs text-gray-700 cursor-pointer'>SHOW</span>
                             </div>
                             <div className='flex items-center justify-between'>
-                                <div>
-                                    <input type='checkbox' className='mr-2 border border-borderColor'/>
+                                <div className='flex items-center justify-center space-x-2'>
+                                    <input type='checkbox' className='border border-borderColor'/>
                                     <label className=' text-gray-700 text-xs'>Remember Me</label>
                                 </div>
                                 <h3 className='text-buttonBG text-xs font-semibold hover:underline hover:underline-offset-2 cursor-pointer'>Forgot
