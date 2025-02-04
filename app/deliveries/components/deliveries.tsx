@@ -54,10 +54,10 @@ const Deliveries = () => {
                                 <p className='font-semibold text-gray-700 text-sm'>Most Recent</p>
                                 <Image src={DownArrowIcon} alt='down arrow icon'/>
                             </div>
-                            <div className='border  flex items-center space-x-2 px-3 py-1'>
+                            <div className='border  flex items-center space-x-2 px-3 py-1 w-1/5'>
                                 <Image src={SearchIcon} alt='search icon'/>
                                 <input type="text" placeholder='Search by package code'
-                                       className='focus:outline-none bg-transparent placeholder:font-light text-sm'/>
+                                       className='w-full focus:outline-none bg-transparent placeholder:font-light text-sm'/>
                             </div>
                         </div>
                         <DeliveriesTable/>

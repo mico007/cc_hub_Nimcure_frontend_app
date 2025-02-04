@@ -23,7 +23,7 @@ const Patients = () => {
                     <div className='border  flex items-center space-x-2 px-3 py-1 w-1/5'>
                         <Image src={SearchIcon} alt='search icon'/>
                         <input type="text" placeholder='Search by patient name, id'
-                               className='focus:outline-none bg-transparent placeholder:font-light text-sm'/>
+                               className='w-full focus:outline-none bg-transparent placeholder:font-light text-sm'/>
                     </div>
                 </div>
                 <PatientsTable/>
