@@ -1,5 +1,7 @@
 import Image from "next/image";
+
 import EditIcon from "@/public/assets/icons/edit-icon.svg";
+import DownArrowIcon from "@/public/assets/icons/down-arrow-icon.svg"
 
 
 const PatientInfo = () => {
@@ -37,8 +39,13 @@ const PatientInfo = () => {
                     </div>
                     <div className='flex items-center justify-between mb-4'>
                         <div className="border border-borderColor bg-infoBG px-4 py-1 mb-4 w-1/3">
-                            <p className='text-xs font-light text-gray-700'>Gender</p>
-                            <h3 className='text-sm text-gray-700'>Male</h3>
+                            <div className='flex items-center justify-between'>
+                                <div>
+                                    <p className='text-xs font-light text-gray-700'>Gender</p>
+                                    <h3 className='text-sm text-gray-700'>Male</h3>
+                                </div>
+                                <Image className='cursor-pointer' src={DownArrowIcon} alt='Down arrow icon' />
+                            </div>
                         </div>
                         <div className="border border-borderColor bg-infoBG px-4 py-1 mb-4 w-1/3">
                             <p className='text-xs font-light text-gray-700'>Phone Number</p>

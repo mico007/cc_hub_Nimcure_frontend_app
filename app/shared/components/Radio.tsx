@@ -9,7 +9,7 @@ const Radio = ({label, id, activeTab}:IProps) => {
 
     return (
         <div className="flex gap-2 items-start py-4">
-            <div className="grid place-items-center mt-1 cursor-pointer">
+             <div className="grid place-items-center mt-1 cursor-pointer">
                 <input
                     type="radio"
                     id={id}
@@ -20,7 +20,7 @@ const Radio = ({label, id, activeTab}:IProps) => {
                     <div className={`pointer-events-none col-start-1 row-start-1 w-2 h-2 rounded-full ${activeTab === id ? 'peer-checked:bg-outlineBlue' : 'peer-checked:bg-gray-400'} `}/>
                 )}
             </div>
-            <label htmlFor={id} className="text-start cursor-pointer">{label}</label>
+            <label htmlFor={id} className={`${activeTab === id && 'text-outlineBlue'} text-start cursor-pointer`}>{label}</label>
         </div>
     )
 }

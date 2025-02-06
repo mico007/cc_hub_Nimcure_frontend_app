@@ -27,7 +27,9 @@ export default {
         orangeColor: "#FF7A00",
         redColor: "#F42C1F",
         lightBlueBG: "#e9f0fe",
-        infoBG: "#EFEFEF"
+        infoBG: "#EFEFEF",
+        badgeBG: '#f6f6f8',
+        badgeText: '#827F98',
       },
     },
   },
