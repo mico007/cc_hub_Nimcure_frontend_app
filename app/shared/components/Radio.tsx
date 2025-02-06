@@ -20,7 +20,7 @@ const Radio = ({label, id, activeTab}:IProps) => {
                     <div className={`pointer-events-none col-start-1 row-start-1 w-2 h-2 rounded-full ${activeTab === id ? 'peer-checked:bg-outlineBlue' : 'peer-checked:bg-gray-400'} `}/>
                 )}
             </div>
-            <label htmlFor={id} className={`${activeTab === id && 'text-outlineBlue'} text-start cursor-pointer`}>{label}</label>
+            <label htmlFor={id} className={`${activeTab === id ? 'text-outlineBlue' : 'text-gray-700 font-light'} text-start text-sm cursor-pointer`}>{label}</label>
         </div>
     )
 }

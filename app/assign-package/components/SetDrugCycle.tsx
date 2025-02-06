@@ -22,7 +22,7 @@ const SetDrugCycle = ({setState, setDrugCycleTabData, setDispatchRiderTabData}: 
 
     return (
         <div className='mt-5 mb-8 mx-12' style={{height: '350px'}}>
-            <h3 className='tsxt-xs text-gray-600 mb-5'>
+            <h3 className='text-sm text-gray-600 mb-5'>
                 Oluwaseun Aregbesola has a drug cycle of two(2) months
             </h3>
             <div>

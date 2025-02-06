@@ -85,7 +85,7 @@ const AssignPackageToPatient = () => {
                                                     alt='Approved icon'
                                                 />
                                             </div>
-                                            <span className="text-start cursor-pointer text-greenColor">Set Drug Cycle/Length</span>
+                                            <span className="text-start cursor-pointer text-greenColor text-sm">Set Drug Cycle/Length</span>
                                         </div>
                                         <div className={`${activeTab === 'Assign Dispatch Rider' && 'border-b border-outlineBlue'} `}><Radio id='Assign Dispatch Rider' label='Assign Dispatch Rider' activeTab={activeTab}/></div>
                                         <div className={`${activeTab === 'Scan Package' && 'border-b border-outlineBlue'} `}><Radio id='Scan Package' label='Scan Package' activeTab={activeTab}/></div>
@@ -99,7 +99,7 @@ const AssignPackageToPatient = () => {
                                                     alt='Approved icon'
                                                 />
                                             </div>
-                                            <span className="text-start cursor-pointer text-greenColor">Set Drug Cycle/Length</span>
+                                            <span className="text-start cursor-pointer text-greenColor text-sm">Set Drug Cycle/Length</span>
                                         </div>
                                         <div className="flex gap-2 items-start py-4">
                                             <div className="grid place-items-center mt-1 cursor-pointer">
@@ -108,7 +108,7 @@ const AssignPackageToPatient = () => {
                                                     alt='Approved icon'
                                                 />
                                             </div>
-                                            <span className="text-start cursor-pointer text-greenColor">Assign Dispatch Rider</span>
+                                            <span className="text-start cursor-pointer text-greenColor text-sm">Assign Dispatch Rider</span>
                                         </div>
                                         <div className={`${activeTab === 'Scan Package' && 'border-b border-outlineBlue'} `}><Radio id='Scan Package' label='Scan Package' activeTab={activeTab}/></div>
                                     </>
